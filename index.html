@@ -1,0 +1,141 @@
+rashi.html
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>shivamportfoliowebsite</title>
+        <link rel="icon" type="image/png" href="vecteezy_3d-character-illustration-of-front-end-developer_12658272.png">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial;
+                font-size: 17px;
+            }
+
+            #myVideo {
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+            }
+
+            .content {
+                position: fixed;
+                top: 0;
+                background: rgba(5, 14, 89, 0.5);
+                color: #7854fa;
+                width: 100%;
+                padding: 20px;
+            }
+
+
+
+            #myBtn:hover {
+                background: #dddddd;
+                color: rgb(0, 0, 0);
+            }
+        </style>
+        </head>
+
+        <body>
+
+            <video autoplay muted loop id="myVideo">
+                <source src="10130349-hd_1920_1080_30fps.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+
+            <div class="content">
+
+
+                <main>
+                    <section class="firstsection">
+
+                        <div class="leftsection">
+
+                            Hi, My Name is
+                            <div class="perple">SHIVAM</div>
+                            <span id="element"></span>
+                            <div>
+                                <input type="button" value="Download Resume" class="botton">
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="rightsection">
+                            <img src="vecteezy_cartoon-character-with-the-desk-working-concept-illustration_44428139.png"
+                                alt="">
+                        </div>
+
+
+                    </section>
+
+                    <section class="secondsection">
+
+                        <header>
+                            <nav>
+                                <div class="left"> SHIVAM'S PORTFOLIO</div>
+                                <div class="right">
+
+                                    <ul>
+                                        <li> <input type="button" value="Home"></li>
+                                        <li> <input type="button" value="About"></li>
+                                        <li> <input type="button" value="Services"></li>
+                                        <li>
+                                            <input type="button" value="Projects">
+                                        </li>
+                                        <li> <input type="button" value="Contect Me"></li>
+                                    </ul>
+
+                                </div>
+                                <h5 class="rights">&#169;shivamportfoliowebsite.com | All right reserved</h5>
+
+                            </nav>
+                        </header>
+
+
+                    </section>
+                </main>
+
+
+            </div>
+
+            <script>
+                var video = document.getElementById("myVideo");
+
+                function myFunction() {
+                    if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "Pause";
+                    } else {
+                        video.pause();
+                        btn.innerHTML = "Play";
+                    }
+                }
+            </script>
+            <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+            <script>
+                var typed = new Typed('#element', {
+                    strings: ['And i am passionate', 'Web Developer'],
+                    typeSpeed: 30,
+                });
+            </script>
+
+        </body>
+
+</html>
